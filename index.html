@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Atelier10-1 : Machine à sous - ASYNCHRONE</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="fonctionsAjax.js"></script>
+    <script type="text/javascript" src="fonctionsMachine.js"></script>
+    <script type="text/javascript" src="json.js"></script>
+</head>
+<body>
+<img src="../commun/logo.jpg" width="600" height="100">
+<h2>Atelier10-1</h2>
+<div id="page">
+    <!-- Zone du résultat -->
+    <div id="info">Bravo, M <span id="gagnant"></span>&nbsp;vous avez gagné <span id="resultat"></span>&nbsp;Euros</div>
+    <!-- Zone du chargeur -->
+    <img id="charge" src="chargeur.gif" />
+    <!-- Zone du formulaire -->
+    <div id="formulaire">
+        <form>
+            Indiquez votre nom :
+            <input type="text" id="nom" name="nom" />
+            avant de
+            <input name="button" id="button" type="button" onClick="jouer();" value="JOUER" />
+        </form>
+        <div id="message"></div>
+    </div>
+</div>
+
+<!--Tableau des gains-->
+<table width="400" border="1" align="center" cellpadding="0">
+    <tbody id="tableListe">
+        <tr>
+            <td>Pas encore de gain</td>
+            <td>?</td>
+        </tr>
+    </tbody>
+</table>
+<!-- Commentaires sur l'atelier -->
+<div id="commentaire">
+    <ul>
+        <li>Communication <strong>A</strong>SYNCHRONE vers un fichier PHP (valeur de gain aléatoire)</li>
+        <li>Avec une feuille de style</li>
+        <li>Avec contrôle de readyState et de status</li>
+        <li>Avec gestion du chargeur et blocage du bouton</li>
+        <li>Avec une fonction universelle de création d'objet XHR</li>
+        <li>Avec les fonctions DOM</li>
+        <li>Avec fonctions JS externes</li>
+        <li><strong>Avec un champ nom</strong></li>
+    </ul>
+</div>
+</body>
+</html>
